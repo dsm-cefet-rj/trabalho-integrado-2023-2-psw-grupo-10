@@ -44,11 +44,11 @@ class Home extends React.Component {
                 Service
               </NavLink>
                 </li>
-                {/*<li>
+                <li>
                 <NavLink to="/pages" activeClassName="active">
                 Pages
               </NavLink>
-                </li>*/}
+                </li>
                {/* <li>
                 <NavLink to="/blog" activeClassName="active">
                 Blog
