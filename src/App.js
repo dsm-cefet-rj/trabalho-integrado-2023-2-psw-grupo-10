@@ -20,6 +20,7 @@ function App() {
           <Route path="/Contact-Us" element={<ContactUs />} />
           <Route path="/Service" element={<Service />} />
           <Route path="/image-detail/:id" element={<ImageDetail />} />
+          <Route path="/" element={<Navigate to="/home" />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
