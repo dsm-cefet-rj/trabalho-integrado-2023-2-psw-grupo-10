@@ -12,19 +12,30 @@ import './App.css';
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Header />
+      <Router>
+        <Header>
+        <div className="container">
+              <nav>
+                <ul>
+                  
+                  <li><Link to="Home">Home</Link></li>
+                  <li><Link to="About-Us">About us</Link></li>
+                  <li><Link to="Contact-Us">Contact us</Link></li>
+                  <li><Link to="Service">Service</Link></li>
+                </ul>
+              </nav>
+          </div>
+        </Header>
         <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About-Us" element={<AboutUs />} />
-          <Route path="/Contact-Us" element={<ContactUs />} />
-          <Route path="/Service" element={<Service />} />
-          <Route path="/image-detail/:id" element={<ImageDetail />} />
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="About-Us" element={<AboutUs />} />
+          <Route path="Contact-Us" element={<ContactUs />} />
+          <Route path="Service" element={<Service />} />
+          <Route path="image-detail" element={<ImageDetail />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
