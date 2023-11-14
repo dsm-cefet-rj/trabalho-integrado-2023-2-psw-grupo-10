@@ -38,6 +38,16 @@ function Service() {
     },
   ];
 
+  // New state to store the service registration data
+  const [newService, setNewService] = useState({
+    title: '',
+    description: '',
+    price: '',
+  });
+
+
+
+
   // Function to handle image click and display details
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -45,7 +55,28 @@ function Service() {
 
   // Function to navigate to the Home page when the button is clicked
   const handleButtonClick = () => {
-    navigate('/Home');
+    navigate('/');
+  };
+
+  // Function to handle changes in the form fields
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
+    setNewService({
+      ...newService,
+      [name]: value,
+    });
+  };
+
+  // Function to add the new service to the list (you can customize this logic)
+  const addNewService = () => {
+    // You can perform actions like adding the new service to a database or a list here
+    console.log('New Service:', newService);
+    // Reset the form fields
+    setNewService({
+      name: '',
+      description: '',
+      price: '',
+    });
   };
 
   return (
@@ -72,9 +103,57 @@ function Service() {
           <p>Price: {selectedImage.price}</p> {/* Display price */}
         </div>
       )}
+     
       <div>
         <button onClick={handleButtonClick}>Go to Home</button>
       </div>
+
+       {/* Registration form for new services */}
+       <div class="service-registration-container">
+       
+        <h2>Register a New Service</h2>
+        <form class="service-registration-form">
+          <div>
+            <label htmlFor="name">Service Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={newService.name}
+              onChange={handleFormChange}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="description">Description:</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              value={newService.description}
+              onChange={handleFormChange}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="price">Price:</label>
+            <input
+              type="text"
+              id="price"
+              name="price"
+              value={newService.price}
+              onChange={handleFormChange}
+            />
+          </div>
+            
+          <button type="button" onClick={addNewService}>
+            Register Service
+          </button>
+        </form>
+
+
+
+     </div>
     </div>
   );
 }

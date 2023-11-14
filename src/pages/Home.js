@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
+
 import bannerImage from "../img/banner.png";
 //import bannerImage2 from "../img/banner.png";
 //import bannerImage3 from "../img/banner.png";
@@ -18,9 +19,17 @@ import logo4 from "../img/logo4.png";
 
 class Home extends React.Component {
 
+  state = {
+    searchQuery: '',
+  };
+
+  // Arrow function automatically binds 'this'
+  handleSearch = () => {
+    console.log(this.state.searchQuery);
+  };
+    
   
-
-
+  
 
   render() {
     return (
@@ -30,7 +39,7 @@ class Home extends React.Component {
             <div className="menu">
               <ul>
                 <li>
-                <NavLink to="/home" activeClassName="active">
+                <NavLink to="/" activeClassName="active">
                 Home
               </NavLink>
                 </li>
@@ -66,8 +75,10 @@ class Home extends React.Component {
             <input
                 placeholder="Search Something"
                 type="text" />
-              
-             {/* <button onClick={this.handleSearch}>Search</button>*/}
+
+              {/*<button onClick={this.handleSearch}>Search</button>*/}
+              <button className="search-button" onClick={this.handleSearch}>Search</button>
+
             </div>
           </div>
         </main>

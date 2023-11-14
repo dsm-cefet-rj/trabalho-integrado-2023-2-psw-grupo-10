@@ -6,7 +6,7 @@ function AboutUs() {
   const navigate = useNavigate();
 
   const goToHomePage = () => {
-    navigate("/Home");
+    navigate("/");
   };
 
   return (

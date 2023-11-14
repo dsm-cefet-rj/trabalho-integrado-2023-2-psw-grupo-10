@@ -27,7 +27,7 @@ function ContactUs() {
 
     // Automatically navigate back to the Home page after 2 seconds
     setTimeout(() => {
-      navigate('/Home');
+      navigate('/');
     }, 2000);
   };
 

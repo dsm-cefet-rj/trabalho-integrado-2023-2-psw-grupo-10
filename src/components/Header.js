@@ -36,6 +36,7 @@ class Header extends React.Component {
                                         <img src={linkedinImage} alt="LinkedIn Icon" />
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
