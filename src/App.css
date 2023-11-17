@@ -1,0 +1,602 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    }
+    ul {
+       padding: 0px!important; 
+    }
+    .menu-principal {
+    width: 100%;
+    background-color: #252323;
+    height: 60px;
+    }
+    main, .content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    }
+    .logo {
+     float: left;
+     padding: 16px;
+     width: 70%;
+    }
+    .redes-sociais ul li {
+    margin-left: 25px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    }
+    .redes-sociais {
+    width: 25%;
+    float: right;
+    }
+    .header-2 {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+    }
+    .menu-urls {
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+    }
+    .menu ul li {
+        display: inline-block;
+        color: #8b8b8b;
+        margin-left: 15px;
+        height: 50px;
+    }
+    
+    .menu ul li:hover {
+        border-bottom: 3px solid #00bac6;
+    }
+    
+    .menu ul li a:hover {
+        color: #00bac6;
+        
+    }
+    
+    .menu ul li a {
+        color: #8b8b8b;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .menu {
+    width: 70%;
+    float: left;
+    }
+
+    
+/* Style for the search container */
+.busca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the search input */
+  .busca input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style for the search button */
+  .busca button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .busca button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styling using media queries */
+  @media (max-width: 768px) {
+    /* Adjust search input width for smaller screens */
+    .busca input {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Further adjustments for even smaller screens if needed */
+    .busca {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .busca input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+   /* .busca {
+        text-align: center;
+        width: 30%;
+        float: right;
+    }
+   /* .busca input {
+        background-image: url(./img/icone-search.png);
+        background-repeat: no-repeat;
+        height: 6px;
+        padding: 12px;
+        width: 190px;
+        margin-top: 10px;
+        background-position: 96%;
+        border: 1px solid #d6d6d6;
+    }*/
+    .col-100 {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    button.slick-prev {
+        font-size: 0px;
+        border: none;
+        width: 25px;
+        height: 51px;
+        z-index: 9;
+        background-color: transparent;
+        position: absolute;
+        background-image: url(./img/anterior.png);
+        top: 35%;
+        left: 14%;
+    }
+    button.slick-next {
+        font-size: 0px;
+        border: none;
+        width: 25px;
+        height: 51px;
+        z-index: 9;
+        background-color: transparent;
+        position: absolute;
+        background-image: url(./img/proximo.png);
+        top: 35%;
+        right: 14%;
+    }
+    .slick-list {
+        width: 100%!important;
+    }
+    .slick-initialized {
+        overflow: hidden;
+    }
+    .slick-dots li button {
+        font-size: 0px;
+        border: 5px solid #ffffff;
+        width: 26px;
+        height: 26px;
+        background: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+    
+    }
+    .slick-dots {
+        margin: -10px auto;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 600px;
+    }
+    
+    li.slick-active button {
+        background: #00bac6;
+    }
+    
+    .slick-dots li {
+        padding-left: 10px;
+        display: inline-block;
+    }
+    
+    .texto-destaque {
+        text-align: center;
+    }
+    .texto-destaque strong {
+        color: #646464;
+    }
+    .texto-destaque h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #818181;
+    }
+    .texto-destaque p {
+        font-size: 15px;
+        color: #9a9a9a;
+    }
+    
+    .col-3 {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px; 
+        width: 29%;
+        float: left;
+        position: relative;
+    }
+    .bloco-imagem img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    .bloco-imagem {
+        height: 300px;
+        border: 1px solid #c5c5c5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 10px;
+    }
+    .bloco-imagem b, p {
+        text-align: left;
+    }
+    .bloco-texto {
+        margin-top: 3em;
+    }
+    
+    h3 {
+        font-weight: normal!important;
+    }
+    
+    .bloco-imagens-texto {
+        background-color: #eeeeee;
+    }
+    .bloco-imagens-texto:before {
+        width: 100%;
+        display: inline-block;
+        content: '';
+        height: 52px;
+        background: #ffffff;
+        background-image: url('./img/setinha.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bloco-imagens-texto:after {
+        width: 100%;
+        display: inline-block;
+        content: '';
+        height: 70px;
+        background: #eeeeee;
+    } 
+    .col-4 {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+    .col-4 img {
+    cursor: pointer;
+     margin: 0 auto;
+     padding-top: 1em;
+     vertical-align: middle;
+    }
+    .col-4 img:hover {
+        margin-top: 10px!important;
+        position: relative!important;
+    }
+    
+    .bloco-logos {
+        height: 170px;
+    }
+    
+    .bloco-logos img {
+        margin-top: 50px;
+    }
+    
+    .footer h3 {
+        text-align: left;
+    }
+    
+    .footer {
+        background-image: url('./img/footer.png');
+        color: #ffffff;
+    }
+    
+    .footer-2 {
+        background-image: url('./img/footer2.png');
+        color: #c1c1c1;
+        height: 90px;
+    }
+    
+    
+    .footer p {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .footer-2 p {
+        padding: 10px;
+    }
+    
+    .clock {
+        color: #898989!important;
+    }
+    
+    .clock:before {
+        content: '';
+        width:  15px;
+        height: 15px;
+        display: inline-block;
+        background-image: url('./img/clock.png');
+        float: left;
+        background-repeat: no-repeat;
+        padding-left: 5px;
+    }
+    
+    .local:before, .emailico:before, .telefoneico:before {
+        content: '';
+        width:  17px;
+        height: 24px;
+        display: inline-block;
+        float: left;
+        background-repeat: no-repeat;
+        padding-left: 5px;
+    }
+    .local:before {
+        background-image: url('./img/local.png');
+    }  
+    .emailico:before {
+        background-image: url('./img/emailico.png');
+    }  
+    .telefoneico:before {
+        background-image: url('./img/telefoneico.png');
+    } 
+  
+  
+
+  /* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+  
+
+
+
+
+/* Contact Us CSS */
+.contact-container {
+    max-width: 600px; /* Reduce the maximum width */
+    margin: 0 auto;
+    padding: 15px; /* Reduce the padding */
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduce the box shadow */
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px; /* Reduce the padding */
+    text-align: center;
+    font-size: 20px; /* Reduce the font size */
+  }
+  
+  .contact-form {
+    margin-top: 15px; /* Reduce the margin */
+  }
+  
+  .contact-label {
+    display: block;
+    margin-bottom: 8px; /* Reduce the margin */
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .contact-input[type="text"],
+  .contact-input[type="email"],
+  .contact-textarea {
+    width: 100%;
+    padding: 8px; /* Reduce the padding */
+    margin-bottom: 12px; /* Reduce the margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Reduce the font size */
+  }
+  
+  .contact-textarea {
+    resize: vertical;
+    min-height: 80px; /* Reduce the min-height */
+  }
+  
+  .contact-button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px; /* Reduce the padding */
+    font-size: 14px; /* Reduce the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .contact-footer {
+    text-align: center;
+    margin-top: 15px; /* Reduce the margin */
+    font-size: 12px; /* Reduce the font size */
+    color: #666;
+  }
+  
+  /* Add more custom styles as needed */
+  
+
+/* Add styling for the headings */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #00bac6; /* Adjust the color as needed */
+  }
+  
+  /* Style the registration form container and center it */
+  .service-registration-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+  }
+  
+  /* Style for the registration form container */
+  .service-registration-form {
+    max-width: 300px;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.1);
+  }
+  
+  /* Style for form input and button */
+  .service-registration-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .service-registration-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-registration-form button:hover {
+    background-color: #45a049;
+  }
+  
